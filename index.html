@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Автокомплекс АвтоЛайф - профессиональная мойка, детейлинг и шиномонтаж в Москве. Качественные услуги для вашего автомобиля.">
+    <meta name="keywords" content="автомойка, детейлинг, шиномонтаж, полировка, химчистка, Москва, Рублевка, автосервис">
+    <title>АвтоЛайф - Мойка, Детейлинг, Шиномонтаж</title>
+    
+    <!-- Фавиконы -->
+    <link rel="apple-touch-icon" sizes="180x180" href="IMG/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="IMG/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="IMG/favicon-16x16.png">
+    <link rel="manifest" href="IMG/site.webmanifest">
+    <link rel="mask-icon" href="IMG/safari-pinned-tab.svg" color="#b22222">
+    <meta name="msapplication-TileColor" content="#b22222">
+    <meta name="theme-color" content="#b22222">
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Flatpickr для календаря -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ru.js"></script>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">
+                    <img src="IMG/Лого.png" alt="АвтоЛайф">
+                </a>
+                
+                <nav>
+                    <ul id="nav-menu">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="pricelist.html">Прайс-лист</a></li>
+                        <li><a href="#promotions">Акции</a></li>
+                        <li><a href="#amenities">Удобства</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a style="color: rgb(255, 78, 78);" href="#booking">Онлайн-запись</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Обновленная кнопка бургер-меню -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Оверлей для меню -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Герой-секция -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">AUTOLIFE</h1>
+                <p class="hero-subtitle">Профессиональная мойка, детейлинг и шиномонтаж на Рублево-Успенском шоссе</p>
+                <div class="hero-btns">
+                    <a href="#services" class="btn">Наши услуги</a>
+                    <a href="#booking" class="btn">Онлайн-запись</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция услуг -->
+    <section style=" border-radius: 10px; transform: translateZ(0); background: rgba(2, 2, 2, 0.352); " id="services" class="services">
+        <div  class="container">
+            <h1 style="transform: translateZ(0);" >Наши услуги</h1>
+            <p style="transform: translateZ(0);">Мы предлагаем полный спектр услуг по уходу за вашим автомобилем</p>
+            
+            <!-- Навигация по услугам -->
+            <div class="services-nav">
+                <div class="container">
+                    <ul class="services-nav-list">
+                        <li><a href="#washing" class="active">Мойка</a></li>
+                        <li><a href="#detailing">Детейлинг</a></li>
+                        <li><a href="#tire-service">Шиномонтаж</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Мойка -->
+            <div id="washing" class="service-category">
+                <h2>Мойка автомобилей</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/CarWash.webp" alt="Мойка кузова">
+                        </div>
+                        <div class="service-content">
+                            <h3>Мойка кузова</h3>
+                            <p class="service-price">от 800 руб.</p>
+                            <p>Тщательная очистка кузова с использованием профессиональных средств</p>
+                            <ul class="service-features">
+                                <li>Бесконтактная мойка высокого давления</li>
+                                <li>Щадящие моющие средства</li>
+                                <li>Сушка микрофиброй</li>
+                            </ul>
+                            <button class="btn queue-btn" data-service="Мойка кузова">Только живая очередь</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/CarWash_complex.webp" alt="Комплексная мойка">
+                        </div>
+                        <div class="service-content">
+                            <h3>Комплексная мойка</h3>
+                            <p class="service-price">от 1600 руб.</p>
+                            <p>Полный уход за автомобилем снаружи и внутри</p>
+                            <ul class="service-features">
+                                <li>Двухфазная мойка кузова </li>
+                                <li>Аэрочистка салона</li>
+                                <li>Влажная уборка</li>
+                                <li>Пылесос</li>
+                                <li>Протирка стекол</li>
+                            </ul>
+                            <button class="btn queue-btn" data-service="Комплексная мойка">Только живая очередь</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Кварцевое_покрытие.webp" alt="Экспресс-мойка">
+                        </div>
+                        <div class="service-content">
+                            <h3>Кварцевое гидрофобное покрытие</h3>
+                            <p class="service-price">от 1500 руб.</p>
+                            <p>Ультра-гидрофобное покрытие для защиты и блеска</p>
+                            <ul class="service-features">
+                                <li>Мгновенное нанесение</li>
+                                <li>Эффект "зеркала"</li>
+                                <li>Защита от грязи и реагента</li>
+                            </ul>
+                            <button class="btn queue-btn" data-service="Кварцевое гидрофобное покрытие">Только живая очередь</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Консервация_двигателя.webp" alt="Мойка двигателя">
+                        </div>
+                        <div class="service-content">
+                            <h3>Мойка двигателя с консервацией</h3>
+                            <p class="service-price">от 3000 руб.</p>
+                            <p>Очистка двигателя от грязи и масляных пятен</p>
+                            <ul class="service-features">
+                                <li>Использование диэлектрического геля</li>
+                                <li>Двухфазная контактная мойка</li>
+                                <li>Консервация для сохрания чистоты</li>
+                            </ul>
+                            <button class="btn queue-btn" data-service="Мойка двигателя с консервацией">Только живая очередь</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="/public_html/IMG/NANO.webp" alt="Мойка салона">
+                        </div>
+                        <div class="service-content">
+                            <h3>NANO Комплекс</h3>
+                            <p class="service-price">от 2200 руб.</p>
+                            <p>Трехфазная мойка автомобиля с использованием щадящих средств</p>
+                            <ul class="service-features">
+                                <li>Использование бесщелочной пены</li>
+                                <li>Безопасно для покрытий и пленок</li>
+                                <li>Покрытие воском</li>
+                            </ul>
+                            <button class="btn queue-btn" data-service="NANO Комплекс">Только живая очередь</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Детейлинг_мойка.webp" alt="Химчистка салона">
+                        </div>
+                        <div class="service-content">
+                            <h3>Детейлинг мойка</h3>
+                            <p class="service-price">от 6000 руб.</p>
+                            <p>Глубокая очистка салона с использованием профессиональных средств</p>
+                            <ul class="service-features">
+                                <li>Двухэтапное удаление глубоких загрязнений кузова</li>
+                                <li>Химчистка дисков</li>
+                                <li>Кварцевое покрытие кузова</li>
+                                <li>Тщательная уборка салона и багажника</li>
+                                <li>Кондиционер для кожи</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Детейлинг мойка" data-price="6000">Записаться онлайн</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Детейлинг -->
+            <div id="detailing" class="service-category">
+                <h2>Детейлинг услуги</h2>
+                <div class="services-grid">
+                     <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Полировка_кузова.webp" alt="Полировка кузова">
+                        </div>
+                        <div class="service-content">
+                            <h3>Полировка кузова</h3>
+                            <p class="service-price">от 25 000 руб.</p>
+                            <p>Восстановление блеска лакокрасочного покрытия</p>
+                            <ul class="service-features">
+                                <li>Удаление царапин и сколов</li>
+                                <li>Восстановление глянца</li>
+                                <li>Зеркальный глянец</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Полировка кузова" data-price="25000">Записаться онлайн</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Восстановление_хромированных_элементов.webp" alt="Детейлинг мойка">
+                        </div>
+
+                        <div class="service-content">
+                            <h3>Восстановление хромированных элементов</h3>
+                            <p class="service-price">от 1500 руб.</p>
+                            <p>Восстановление и полировка хромированных деталей кузова автомобиля</p>
+                            <ul class="service-features">
+                                <li>Обезжиривание поверхности</li>
+                                <li>Удаление коррозии и потускнений</li>
+                                <li>Восстановление блеска хрома</li>
+                                <li>Нанесение защитных покрытий</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Восстановление хромированных элементов" data-price="1500">Записаться онлайн</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Химчистка_кожаных_сидений.webp" alt="Химчистка кожаных сидений">
+                        </div>
+                        <div class="service-content">
+                            <h3>Химчистка кожаных сидений</h3>
+                            <p class="service-price">от 4000 руб.</p>
+                            <p>Глубокая очистка и восстановление кожаных сидений автомобиля</p>
+                            <ul class="service-features">
+                                <li>Глубокая очистка кожи</li>
+                                <li>Удаление пятен и загрязнений</li>
+                                <li>Восстановление цвета и текстуры</li>
+                                <li>Нанесение защитных составов</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Химчистка кожаных сидений" data-price="4000">Записаться онлайн</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Химчистка_салона.webp" alt="Химчистка салона">
+                        </div>
+                        <div class="service-content">
+                            <h3>Химчистка салона</h3>
+                            <p class="service-price">от 20 000 руб.</p>
+                            <p>Глубокая очистка всех поверхностей кузова и салона</p>
+                            <ul class="service-features">
+                                <li>Глубочкая очистка кузова</li>
+                                <li>Химчистка всех поверхностей салона</li>
+                                <li>Удаление запахов</li>
+                                <li>Обработка кожи кондиционером</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Химчистка салона" data-price="20000">Записаться онлайн</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Полировка_фар.webp" alt="Полировка фар">
+                        </div>
+                        <div class="service-content">
+                            <h3>Полировка фар</h3>
+                            <p class="service-price">от 2000 руб.</p>
+                            <p>Восстановление прозрачности фар</p>
+                            <ul class="service-features">
+                                <li>Удаление помутнений</li>
+                                <li>Восстановление светопропускания</li>
+                                <li>Защитное покрытие</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Полировка фар" data-price="2000">Записаться онлайн</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Антидождь.webp" alt="Антидождь">
+                        </div>
+                        <div class="service-content">
+                            <h3>Антидождь на стекла</h3>
+                            <p class="service-price">от 3500 руб.</p>
+                            <p>Нанесение гидрофобного покрытия на стекла</p>
+                            <ul class="service-features">
+                                <li>Улучшенная видимость в дождь</li>
+                                <li>Защита от загрязнений</li>
+                                <li>Долговечный эффект</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Антидождь на стекла" data-price="3500">Записаться онлайн</button>
+                        </div>
+                    </div>
+                    
+        
+            </div>
+            
+            <!-- Шиномонтаж -->
+            <div id="tire-service" class="service-category">
+                <h2>Шиномонтаж и обслуживание колес</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Шиномонтаж.webp" alt="Шиномонтаж">
+                        </div>
+                        <div class="service-content">
+                            <h3>Шиномонтаж</h3>
+                            <p class="service-price">от 450 руб.</p>
+                            <p>Профессиональный шиномонтаж с гарантией качества</p>
+                            <ul class="service-features">
+                                <li>Снятие/установка колес</li>
+                                <li>Балансировка</li>
+                                <li>Ремонт проколов и порезов</li>
+                                <li>Медная смазка</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Шиномонтаж" data-price="450">Записаться онлайн</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Балансировка.webp" alt="Балансировка колес">
+                        </div>
+                        <div class="service-content">
+                            <h3>Балансировка колес</h3>
+                            <p class="service-price">от 150 руб.</p>
+                            <p>Точная балансировка колес для комфортной езды</p>
+                            <ul class="service-features">
+                                <li>Компьютерная балансировка</li>
+                                <li>Использование качественных грузов</li>
+                                <li>Проверка на стенде</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Балансировка колес" data-price="150">Записаться онлайн</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Ремонт_бокового_пореза.webp" alt="Ремонт проколов">
+                        </div>
+                        <div class="service-content">
+                            <h3>Ремонт бокового пореза</h3>
+                            <p class="service-price">от 1000 руб.</p>
+                            <p>Качественный ремонт проколов и порезов шин</p>
+                            <ul class="service-features">
+                                <li>Ремонт бескамерных шин</li>
+                                <li>Вулканизация</li>
+                                <li>Герметизация</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Ремонт бокового пореза" data-price="1000">Записаться онлайн</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Замена_покрышек.webp" alt="Замена покрышек">
+                        </div>
+                        <div class="service-content">
+                            <h3>Замена покрышек</h3>
+                            <p class="service-price">от 190 руб.</p>
+                            <p>Замена летних и зимних покрышек</p>
+                            <ul class="service-features">
+                                <li>Сезонная замена</li>
+                                <li>Правильное хранение</li>
+                                <li>Маркировка колес</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Замена покрышек" data-price="190">Записаться онлайн</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Хранение_шин.webp" alt="Хранение шин">
+                        </div>
+                        <div class="service-content">
+                            <h3>Хранение шин</h3>
+                            <p class="service-price">от 5500 руб./сезон</p>
+                            <p>Правильное хранение шин в межсезонье</p>
+                            <ul class="service-features">
+                                <li>Специальное помещение</li>
+                                <li>Оптимальные условия</li>
+                                <li>Маркировка и учет</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Хранение шин" data-price="5500">Записаться онлайн</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="IMG/Шлифовка_бортов_диска.webp" alt="Развал-схождение">
+                        </div>
+                        <div class="service-content">
+                            <h3>Шлифовка бортов диска</h3>
+                            <p class="service-price">от 300 руб.</p>
+                            <p>Регулировка углов установки колес</p>
+                            <ul class="service-features">
+                                <li>Устранение царапин и следов эксплуатации</li>
+                                <li>Зеркальный блеск</li>
+                                <li>Восстановление геометрии</li>
+                            </ul>
+                            <button class="btn book-service-btn" data-service="Шлифовка бортов диска" data-price="300">Записаться онлайн</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция акций -->
+    <section id="promotions" class="promotions">
+        <div class="container">
+            <h1>Акции и спецпредложения</h1>
+            <p>Воспользуйтесь нашими выгодными предложениями</p>
+            
+            <div class="promotions-grid">
+                <div class="promotion-card">
+                    <div class="promotion-img">
+                        <img src="IMG/Акция_Зима.webp" alt="Подготовка к зиме">
+                    </div>
+                    <div class="promotion-content">
+                        <span class="promotion-badge">Акция</span>
+                        <h3>Подготовка к зиме</h3>
+                        <p>Комплекс услуг по подготовке автомобиля к зимнему сезону со скидкой 15%</p>
+                        <p class="service-price">Скидка 15% до 20 декабря</p>
+                        <button class="btn book-service-btn" data-service="Подготовка к зиме" data-price="0">Узнать подробности</button>
+                    </div>
+                </div>
+                
+                <div class="promotion-card">
+                    <div class="promotion-img">
+                        <img src="IMG/Акция_лето.webp" alt="Подготовка к лету">
+                    </div>
+                    <div class="promotion-content">
+                        <span class="promotion-badge">Акция</span>
+                        <h3>Подготовка к лету</h3>
+                        <p>Специальное предложение по подготовке автомобиля к летнему сезону</p>
+                        <p class="service-price">Скидка 10% при записи онлайн</p>
+                        <button class="btn book-service-btn" data-service="Подготовка к лету" data-price="0">Узнать подробности</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Секция удобств -->
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <h1>Комфорт</h1>
+            <p>Мы создали комфортные условия для вашего ожидания</p>
+            
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>Плазменные телевизоры</h3>
+                    <p>Современные телевизоры с кабельными каналами для комфортного времяпрепровождения</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Бесплатный Wi-Fi</h3>
+                    <p>Высокоскоростной интернет для работы и развлечений во время ожидания</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Кофе и напитки</h3>
+                    <p>Кофе, чай и прохладительные напитки для наших клиентов</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3>Комфортная зона ожидания</h3>
+                    <p>Удобные диваны и кресла в современном интерьере для вашего отдыха</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Легкие закуски</h3>
+                    <p>Небольшое кафе с выпечкой и закусками для быстрого перекуса</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3>Зарядные устройства</h3>
+                    <p>Разъемы для зарядки мобильных устройств различных типов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h1>Галерея работ</h1>
+            <p>Примеры наших работ по мойке, детейлингу и шиномонтажу</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="IMG/Mercedes.webp" alt="Мойка премиум-класса">
+                    <div class="gallery-overlay">
+                        <h3>Мойка премиум-класса</h3>
+                        <p>Mercedes-Benz GT</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="IMG/3.webp" alt="Детейлинг обработка">
+                    <div class="gallery-overlay">
+                        <h3>Полировка кузова</h3>
+                        <p>Audi Q8</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="IMG/13.webp" alt="Химчистка салона">
+                    <div class="gallery-overlay">
+                        <h3>Химчистка салона</h3>
+                        <p>BMW X5</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="IMG/12.webp" alt="Полировка кузова">
+                    <div class="gallery-overlay">
+                        <h3>Мойка мотоцикла</h3>
+                        <p>Yamaha</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="IMG/Галш7.webp" alt="Шиномонтаж">
+                    <div class="gallery-overlay">
+                        <h3>Шиномонтаж</h3>
+                        <p>Комплексное обслуживание</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="IMG/Галш1.webp" alt="Шиномонтаж">
+                    <div class="gallery-overlay">
+                        <h3>Шиномонтаж</h3>
+                        <p>Замена покрышек</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция онлайн-записи -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h1>Онлайн-запись</h1>
+            <p>Запишитесь на услугу прямо сейчас. Доступна запись на детейлинг, химчистку и шиномонтаж</p>
+            <div class="booking-notice">
+                <i class="fas fa-info-circle"></i>
+                <p>Услуги мойки доступны только в порядке живой очереди</p>
+            </div>
+            
+            <div class="booking-content">
+                <div class="booking-form-container">
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="client-name">Ваше имя *</label>
+                                <input type="text" id="client-name" name="client-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-phone">Телефон *</label>
+                                <input type="tel" id="client-phone" name="client-phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="car-brand">Марка автомобиля *</label>
+                                <input type="text" id="car-brand" name="car-brand" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-model">Модель автомобиля *</label>
+                                <input type="text" id="car-model" name="car-model" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service-select">Выберите услугу *</label>
+                            <select id="service-select" name="service" required>
+                                <option value="">-- Выберите услугу --</option>
+                                <optgroup label="Детейлинг услуги">
+                                    <option value="Детейлинг мойка">Детейлинг мойка (от 6000 руб.)</option>
+                                    <option value="Полировка кузова">Полировка кузова (от 25000 руб.)</option>
+                                    <option value="Восстановление хромированных элементов">Восстановление хромированных элементов (от 1500 руб.)</option>
+                                    <option value="Химчистка кожаных сидений">Химчистка кожаных сидений (от 4000 руб.)</option>
+                                    <option value="Химчистка салона">Химчистка салона (от 20000 руб.)</option>
+                                    <option value="Полировка фар">Полировка фар (от 2000 руб.)</option>
+                                    <option value="Антидождь на стекла">Антидождь на стекла (от 3500 руб.)</option>
+                                    <option value="Керамическое покрытие">Керамическое покрытие (от 30000 руб.)</option>
+                                </optgroup>
+                                <optgroup label="Шиномонтаж">
+                                    <option value="Шиномонтаж">Шиномонтаж (от 450 руб.)</option>
+                                    <option value="Балансировка колес">Балансировка колес (от 150 руб.)</option>
+                                    <option value="Ремонт бокового пореза">Ремонт бокового пореза (от 1000 руб.)</option>
+                                    <option value="Замена покрышек">Замена покрышек (от 190 руб.)</option>
+                                    <option value="Хранение шин">Хранение шин (от 5500 руб.)</option>
+                                    <option value="Шлифовка бортов диска">Шлифовка бортов диска (от 300 руб.)</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="booking-date">Выберите дату и время *</label>
+                            <input type="text" id="booking-date" name="booking-date" placeholder="Выберите дату и время" required>
+                            <div class="date-info">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Серым цветом отмечены даты, когда запись недоступна</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="additional-info">Дополнительная информация</label>
+                            <textarea id="additional-info" name="additional-info" rows="4" placeholder="Укажите дополнительные услуги, пожелания или особенности автомобиля"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">Записаться</button>
+                    </form>
+                </div>
+                
+                <div class="booking-info">
+                    <h3>Как работает онлайн-запись?</h3>
+                    <ul class="booking-steps">
+                        <li>
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Выберите услугу</h4>
+                                <p>Выберите нужную услугу из списка (доступны только детейлинг, химчистка и шиномонтаж)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Укажите данные автомобиля</h4>
+                                <p>Введите марку и модель вашего автомобиля</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Выберите дату и время</h4>
+                                <p>Выберите удобное время для визита (красным отмечены занятые даты)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Подтвердите запись</h4>
+                                <p>Мы свяжемся с вами для подтверждения записи</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="booking-notice">
+                        <h4>Важно!</h4>
+                        <p>Запись подтверждается после звонка нашего оператора. Если вы не можете приехать в выбранное время, пожалуйста, сообщите нам об этом как минимум за 2 часа.</p>
+                        <p>Услуги мойки (кроме детейлинг мойки) доступны только в порядке живой очереди.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h1>Контакты</h1>
+            <p>Приезжайте к нам или свяжитесь для записи</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Наш автокомплекс</h3>
+                    <p>Мы находимся в на Рублево-Успенском шоссе, недалеко от МКАДа, и готовы предложить вам качественные услуги</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Адрес</h4>
+                                <p>Рублево-Успенское шоссе, п. Горки-10, строение 31А</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Телефон</h4>
+                                <p>+7 (903) 555-10-55</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>avtolive@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Часы работы</h4>
+                                <p>Пн-Пт: 9:00 - 21:00<br>Сб-Вс: 10:00 - 20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#booking" class="btn" style="margin-top: 20px;">Онлайн-запись</a>
+                </div>
+                
+                <div class="map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aec84bb9bf09a90073b5b3c234f5929693bc159e4e88723947f9fc60773505c97&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="#home" class="logo">
+                        <img src="IMG/Лого.png" alt="АвтоЛайф" style="height: 40px; margin-bottom: 15px;">
+                    </a>
+                    <p>Профессиональный автокомплекс на Рублево-Успенском шоссе. Мойка, детейлинг и шиномонтаж высшего качества.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Услуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="#washing">Мойка</a></li>
+                        <li><a href="#detailing">Детейлинг</a></li>
+                        <li><a href="#tire-service">Шиномонтаж</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#promotions">Акции</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a href="#booking">Онлайн-запись</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li>Рублево-Успенское шоссе, п. Горки-10</li>
+                        <li>+7 (903) 555-10-55</li>
+                        <li>avtolive@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © 2024 Автокомплекс "АвтоЛайф". Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно подтверждения записи -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <h2>Запись успешно создана!</h2>
+                <div class="booking-details">
+                    <p><strong>Имя:</strong> <span id="modal-client-name"></span></p>
+                    <p><strong>Телефон:</strong> <span id="modal-client-phone"></span></p>
+                    <p><strong>Автомобиль:</strong> <span id="modal-car-details"></span></p>
+                    <p><strong>Услуга:</strong> <span id="modal-service"></span></p>
+                    <p><strong>Дата и время:</strong> <span id="modal-date"></span></p>
+                </div>
+                <p>Мы свяжемся с вами в ближайшее время для подтверждения записи.</p>
+                <button class="btn" id="modal-close-btn">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для услуг мойки -->
+    <div id="queue-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <h2>Услуги мойки</h2>
+                <div class="queue-info">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Услуги мойки доступны только в порядке <strong>живой очереди</strong>.</p>
+                    <p>Приезжайте в любое удобное время в часы работы нашего автокомплекса.</p>
+                </div>
+                <div class="queue-details">
+                    <h4>Часы работы:</h4>
+                    <p>Пн-Пт: 9:00 - 21:00</p>
+                    <p>Сб-Вс: 10:00 - 20:00</p>
+                </div>
+                <button class="btn" id="queue-modal-close-btn">Понятно</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+// Отслеживание посещений
+fetch('track_visit.php', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    }
+}).catch(error => {
+    console.error('Ошибка при отслеживании посещения:', error);
+});
+
+
+    // Мобильное меню с анимацией
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+    
+    mobileMenuBtn.addEventListener('click', function() {
+        this.classList.toggle('open');
+        navMenu.classList.toggle('show');
+        menuOverlay.classList.toggle('active');
+        
+        // Блокировка скролла при открытом меню
+        if (navMenu.classList.contains('show')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // Закрытие меню при клике на оверлей
+    menuOverlay.addEventListener('click', function() {
+        mobileMenuBtn.classList.remove('open');
+        navMenu.classList.remove('show');
+        this.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+    
+    // Закрытие меню при клике на ссылку
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                mobileMenuBtn.classList.remove('open');
+                navMenu.classList.remove('show');
+                menuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+    
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Навигация по услугам
+    const serviceNavLinks = document.querySelectorAll('.services-nav-list a');
+    
+    serviceNavLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Удаляем активный класс у всех ссылок
+            serviceNavLinks.forEach(item => item.classList.remove('active'));
+            
+            // Добавляем активный класс к текущей ссылке
+            this.classList.add('active');
+            
+            // Плавная прокрутка к секции
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const offsetTop = targetElement.offsetTop - 140; // Учитываем высоту шапки и навигации
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Адаптивное меню
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            mobileMenuBtn.classList.remove('open');
+            navMenu.classList.remove('show');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // Автоматическое выделение активной секции при прокрутке
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('.service-category');
+        const navLinks = document.querySelectorAll('.services-nav-list a');
+        
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (pageYOffset >= (sectionTop - 200)) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // Параллакс эффект для герой-секции
+    window.addEventListener('scroll', function() {
+        const scrolled = window.pageYOffset;
+        const hero = document.querySelector('.hero');
+        const heroContent = document.querySelector('.hero-content');
+        
+        // Эффект параллакса для фона
+        if (hero && window.innerWidth > 992) {
+            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+        
+        // Легкое затемнение контента при прокрутке
+        if (heroContent && window.innerWidth > 992) {
+            const opacity = 1 - (scrolled / 500);
+            heroContent.style.opacity = opacity > 0.7 ? opacity : 0.7;
+        }
+    });
+
+    // Онлайн-запись - инициализация календаря
+    const bookingDateInput = document.getElementById('booking-date');
+    const bookingForm = document.getElementById('booking-form');
+    const bookServiceBtns = document.querySelectorAll('.book-service-btn');
+    const queueBtns = document.querySelectorAll('.queue-btn');
+    const serviceSelect = document.getElementById('service-select');
+    const bookingModal = document.getElementById('booking-modal');
+    const queueModal = document.getElementById('queue-modal');
+    const closeModalBtns = document.querySelectorAll('.close-modal');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+    const queueModalCloseBtn = document.getElementById('queue-modal-close-btn');
+
+    // Занятые даты (будем получать с сервера)
+    let busyDates = [];
+
+    // Функция для получения занятых дат с сервера
+    async function fetchBusyDates() {
+        try {
+            const response = await fetch('busy_dates.php');
+            const data = await response.json();
+            if (data.busy_dates) {
+                busyDates = data.busy_dates;
+            }
+        } catch (error) {
+            console.error('Ошибка при получении занятых дат:', error);
+        }
+    }
+
+    // Инициализация Flatpickr для выбора даты и времени с отключенными датами
+    const flatpickrInstance = flatpickr(bookingDateInput, {
+        enableTime: true,
+        dateFormat: "Y-m-d H:i",
+        minDate: "today",
+        time_24hr: true,
+        locale: "ru",
+        minTime: "09:00",
+        maxTime: "21:00",
+        disable: [
+            function(date) {
+                // Отключаем воскресенье
+                return date.getDay() === 0;
+            },
+            // Отключаем занятые даты
+            ...busyDates
+        ],
+        onDayCreate: function(dObj, dStr, fp, dayElem) {
+            // Помечаем занятые даты красным цветом
+            const dateStr = fp.formatDate(dayElem.dateObj, "Y-m-d");
+            if (busyDates.includes(dateStr)) {
+                dayElem.style.backgroundColor = "rgba(178, 34, 34, 0.2)";
+                dayElem.style.color = "#b22222";
+                dayElem.style.fontWeight = "bold";
+            }
+        }
+    });
+
+    // Заполнение формы при клике на кнопку "Записаться онлайн" в карточке услуги
+    bookServiceBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const service = this.getAttribute('data-service');
+            const price = this.getAttribute('data-price');
+            
+            // Прокрутка к форме записи
+            document.getElementById('booking').scrollIntoView({
+                behavior: 'smooth'
+            });
+            
+            // Заполнение выбранной услуги
+            serviceSelect.value = service;
+        });
+    });
+
+    // Обработка кнопок "Только живая очередь"
+    queueBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const service = this.getAttribute('data-service');
+            queueModal.style.display = 'block';
+        });
+    });
+
+    // Обработка отправки формы
+    bookingForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        // Получение данных из формы
+        const formData = {
+            name: document.getElementById('client-name').value,
+            phone: document.getElementById('client-phone').value,
+            carBrand: document.getElementById('car-brand').value,
+            carModel: document.getElementById('car-model').value,
+            service: serviceSelect.value,
+            date: bookingDateInput.value,
+            additionalInfo: document.getElementById('additional-info').value
+        };
+        
+        // Валидация формы
+        if (!formData.name || !formData.phone || !formData.carBrand || !formData.carModel || !formData.service || !formData.date) {
+            alert('Пожалуйста, заполните все обязательные поля');
+            return;
+        }
+        
+        // Проверка, что выбранная дата не занята
+        const selectedDate = new Date(formData.date);
+        const selectedDateStr = selectedDate.toISOString().split('T')[0];
+        
+        if (busyDates.includes(selectedDateStr)) {
+            alert('Выбранная дата недоступна для записи. Пожалуйста, выберите другую дату.');
+            return;
+        }
+        
+        // Отправка данных на сервер
+        await saveBooking(formData);
+    });
+
+    // Функция для сохранения записи в базу данных
+    async function saveBooking(bookingData) {
+        try {
+            const response = await fetch('api.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: bookingData.name,
+                    phone: bookingData.phone,
+                    carBrand: bookingData.carBrand,
+                    carModel: bookingData.carModel,
+                    service: bookingData.service,
+                    date: bookingData.date,
+                    additionalInfo: bookingData.additionalInfo
+                })
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                // Заполнение модального окна данными
+                document.getElementById('modal-client-name').textContent = bookingData.name;
+                document.getElementById('modal-client-phone').textContent = bookingData.phone;
+                document.getElementById('modal-car-details').textContent = `${bookingData.carBrand} ${bookingData.carModel}`;
+                document.getElementById('modal-service').textContent = bookingData.service;
+                document.getElementById('modal-date').textContent = formatDate(bookingData.date);
+
+                // Показ модального окна
+                bookingModal.style.display = 'block';
+
+                // Очистка формы
+                bookingForm.reset();
+                
+                // Обновляем список занятых дат
+                await fetchBusyDates();
+                flatpickrInstance.set('disable', [
+                    function(date) {
+                        return date.getDay() === 0;
+                    },
+                    ...busyDates
+                ]);
+            } else {
+                alert('Ошибка при сохранении записи: ' + result.message);
+            }
+        } catch (error) {
+            console.error('Ошибка:', error);
+            alert('Произошла ошибка при отправке данных. Пожалуйста, попробуйте еще раз.');
+        }
+    }
+
+    // Форматирование даты для отображения
+    function formatDate(dateString) {
+        const date = new Date(dateString);
+        const options = { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        };
+        return date.toLocaleDateString('ru-RU', options);
+    }
+
+    // Закрытие модальных окон
+    closeModalBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            bookingModal.style.display = 'none';
+            queueModal.style.display = 'none';
+        });
+    });
+    
+    modalCloseBtn.addEventListener('click', function() {
+        bookingModal.style.display = 'none';
+    });
+    
+    queueModalCloseBtn.addEventListener('click', function() {
+        queueModal.style.display = 'none';
+    });
+    
+    window.addEventListener('click', function(e) {
+        if (e.target === bookingModal) {
+            bookingModal.style.display = 'none';
+        }
+        if (e.target === queueModal) {
+            queueModal.style.display = 'none';
+        }
+    });
+
+    // Загружаем занятые даты при загрузке страницы
+    document.addEventListener('DOMContentLoaded', async function() {
+        await fetchBusyDates();
+    });
+</script>
+
+</body>
+</html>
