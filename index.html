@@ -22,7 +22,7 @@
     <!-- Стили -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css" media="print" onload="this.media='all'">
 </head>
 <body>
 
@@ -102,7 +102,7 @@
                         </div>
                         <div class="service-content">
                             <h3>Мойка кузова</h3>
-                            <p class="service-price">от 800 руб.</p>
+                            <p class="service-price">от 1100 руб.</p>
                             <p>Тщательная очистка кузова с использованием профессиональных средств</p>
                             <ul class="service-features">
                                 <li>Бесконтактная мойка высокого давления</li>
@@ -119,7 +119,7 @@
                         </div>
                         <div class="service-content">
                             <h3>Комплексная мойка</h3>
-                            <p class="service-price">от 1600 руб.</p>
+                            <p class="service-price">от 2100 руб.</p>
                             <p>Полный уход за автомобилем снаружи и внутри</p>
                             <ul class="service-features">
                                 <li>Двухфазная мойка кузова</li>
@@ -172,7 +172,7 @@
                         </div>
                         <div class="service-content">
                             <h3>NANO Комплекс</h3>
-                            <p class="service-price">от 2200 руб.</p>
+                            <p class="service-price">от 2900 руб.</p>
                             <p>Трёхфазная мойка с использованием щадящих средств</p>
                             <ul class="service-features">
                                 <li>Использование бесщелочной пены</li>
@@ -185,7 +185,7 @@
 
                     <div class="service-card">
                         <div class="service-img">
-                            <img src="IMG/Детейлинг_мойка.webp" alt="Детейлинг мойка" loading="lazy">
+                            <img src="IMG/Detailing.webp" alt="Детейлинг мойка" loading="lazy">
                         </div>
                         <div class="service-content">
                             <h3>Детейлинг мойка</h3>
@@ -245,7 +245,7 @@
 
                     <div class="service-card">
                         <div class="service-img">
-                            <img src="IMG/Химчистка_кожаных_сидений.webp" alt="Химчистка кожаных сидений" loading="lazy">
+                            <img src="IMG/Leather.webp" alt="Химчистка кожаных сидений" loading="lazy">
                         </div>
                         <div class="service-content">
                             <h3>Химчистка кожаных сидений</h3>
@@ -263,11 +263,11 @@
 
                     <div class="service-card">
                         <div class="service-img">
-                            <img src="IMG/Химчистка_салона.webp" alt="Химчистка салона" loading="lazy">
+                            <img src="IMG/khimchistka.webp" alt="Химчистка салона" loading="lazy">
                         </div>
                         <div class="service-content">
                             <h3>Химчистка салона</h3>
-                            <p class="service-price">от 20 000 руб.</p>
+                            <p class="service-price">от 18 000 руб.</p>
                             <p>Глубокая очистка всех поверхностей кузова и салона</p>
                             <ul class="service-features">
                                 <li>Глубокая очистка кузова</li>
@@ -275,7 +275,7 @@
                                 <li>Удаление запахов</li>
                                 <li>Обработка кожи кондиционером</li>
                             </ul>
-                            <button class="btn book-service-btn" data-service="Химчистка салона" data-price="20000">Записаться онлайн</button>
+                            <button class="btn book-service-btn" data-service="Химчистка салона" data-price="18000">Записаться онлайн</button>
                         </div>
                     </div>
 
@@ -599,13 +599,17 @@
             <h1 class="section-title">Онлайн-запись</h1>
             <p class="section-subtitle">Запишитесь на услугу прямо сейчас</p>
 
-            <div class="booking-notice">
+            <div class="booking-notice booking-notice--top">
                 <i class="fas fa-info-circle"></i>
                 <p>Услуги мойки доступны только в порядке живой очереди</p>
             </div>
 
             <div class="booking-content">
                 <div class="booking-form-container">
+                    <div class="booking-form-header">
+                        <span class="booking-form-badge">Заполните форму</span>
+                        <h3 class="booking-form-title">Данные для записи</h3>
+                    </div>
                     <form id="booking-form" class="booking-form">
                         <div class="form-row">
                             <div class="form-group">
@@ -638,7 +642,7 @@
                                     <option value="Полировка кузова">Полировка кузова (от 25000 руб.)</option>
                                     <option value="Восстановление хромированных элементов">Восстановление хромированных элементов (от 1500 руб.)</option>
                                     <option value="Химчистка кожаных сидений">Химчистка кожаных сидений (от 4000 руб.)</option>
-                                    <option value="Химчистка салона">Химчистка салона (от 20000 руб.)</option>
+                                    <option value="Химчистка салона">Химчистка салона (от 18000 руб.)</option>
                                     <option value="Полировка фар">Полировка фар (от 2000 руб.)</option>
                                     <option value="Антидождь на стекла">Антидождь на стёкла (от 3500 руб.)</option>
                                     <option value="Керамическое покрытие">Керамическое покрытие (от 30000 руб.)</option>
@@ -779,12 +783,6 @@
                         <img src="IMG/Лого.png" alt="АвтоЛайф" width="120" height="30">
                     </a>
                     <p>Профессиональный автокомплекс на Рублево-Успенском шоссе. Мойка, детейлинг и шиномонтаж высшего качества.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
-                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
-                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
                 </div>
 
                 <div class="footer-col">
@@ -857,8 +855,8 @@
                 </div>
                 <div class="queue-details">
                     <h4>Часы работы:</h4>
-                    <p>Пн-Пт: 9:00 — 21:00</p>
-                    <p>Сб-Вс: 10:00 — 20:00</p>
+                    <p>Пн-Сб: 8:00 — 22:00</p>
+                    <p>Вс: 9:00 — 21:00</p>
                 </div>
                 <button class="btn" id="queue-modal-close-btn">Понятно</button>
             </div>
